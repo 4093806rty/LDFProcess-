@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LDFProcess - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "G:\aTemp\Temp\RSPBF49.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/LDFProcess.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp"
+]
+Creating command line "cl.exe @G:\aTemp\Temp\RSPBF49.tmp" 
+Creating temporary file "G:\aTemp\Temp\RSPBF4A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/LDFProcess.pdb" /debug /machine:I386 /out:"Debug/LDFProcess.exe" /pdbtype:sept 
+".\Debug\AbnmdlDlg.obj"
+".\Debug\CldetcDlg.obj"
+".\Debug\Core.obj"
+".\Debug\GDC.obj"
+".\Debug\GeoLayer.obj"
+".\Debug\GeoMath.obj"
+".\Debug\Geometry.obj"
+".\Debug\GeoTable.obj"
+".\Debug\GMap.obj"
+".\Debug\InputDlg.obj"
+".\Debug\IProvider.obj"
+".\Debug\Irmath.obj"
+".\Debug\LDF.obj"
+".\Debug\LDFProcess.obj"
+".\Debug\LDFProcessDlg.obj"
+".\Debug\OutputDlg.obj"
+".\Debug\ShapeFile.obj"
+".\Debug\ShapeProvider.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Store.obj"
+".\Debug\LDFProcess.res"
+".\Debug\LDFToPicture.obj"
+]
+Creating command line "link.exe @G:\aTemp\Temp\RSPBF4A.tmp"
+<h3>Output Window</h3>
+Compiling...
+LDFToPicture.cpp
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(12) : error C2039: 'Cyan' : is not a member of 'Color'
+        g:\atemp\ldfprocess - 副本12\includes\gdipluscolor.h(46) : see declaration of 'Color'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(12) : error C2065: 'Cyan' : undeclared identifier
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(48) : error C2039: 'Cyan' : is not a member of 'Color'
+        g:\atemp\ldfprocess - 副本12\includes\gdipluscolor.h(46) : see declaration of 'Color'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(169) : error C2371: 'i' : redefinition; different basic types
+        G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(152) : see declaration of 'i'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(176) : error C2039: 'GetString' : is not a member of 'CString'
+        e:\rsprogramfiles\microsoft visual studio\vc98\mfc\include\afx.h(368) : see declaration of 'CString'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(307) : error C2039: 'TextRenderingHintAntiAliasGridFit' : is not a member of 'TextRenderingHint'
+        g:\atemp\ldfprocess - 副本12\includes\gdiplusenums.h(479) : see declaration of 'TextRenderingHint'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(307) : error C2065: 'TextRenderingHintAntiAliasGridFit' : undeclared identifier
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(318) : error C2039: 'GetString' : is not a member of 'CString'
+        e:\rsprogramfiles\microsoft visual studio\vc98\mfc\include\afx.h(368) : see declaration of 'CString'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(324) : error C2039: 'GetString' : is not a member of 'CString'
+        e:\rsprogramfiles\microsoft visual studio\vc98\mfc\include\afx.h(368) : see declaration of 'CString'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(328) : error C2374: 'i' : redefinition; multiple initialization
+        G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(310) : see declaration of 'i'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(336) : error C2039: 'GetString' : is not a member of 'CString'
+        e:\rsprogramfiles\microsoft visual studio\vc98\mfc\include\afx.h(368) : see declaration of 'CString'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(342) : error C2039: 'GetString' : is not a member of 'CString'
+        e:\rsprogramfiles\microsoft visual studio\vc98\mfc\include\afx.h(368) : see declaration of 'CString'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(373) : error C2065: 'GetImageEncoders' : undeclared identifier
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(394) : error C2664: 'GetImageCLSID' : cannot convert parameter 1 from 'char [10]' to 'const unsigned short *'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(395) : error C2664: 'enum Gdiplus::Status __thiscall Gdiplus::Image::Save(const unsigned short *,const struct _GUID *,const class Gdiplus::EncoderParameters *)' : cannot convert parameter 1 from 'class CString' to 'const unsigned short *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(410) : error C2039: 'SmoothingModeHighQuality' : is not a member of 'SmoothingMode'
+        g:\atemp\ldfprocess - 副本12\includes\gdiplusenums.h(451) : see declaration of 'SmoothingMode'
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(410) : error C2065: 'SmoothingModeHighQuality' : undeclared identifier
+G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(482) : error C2374: 'i' : redefinition; multiple initialization
+        G:\aTemp\LDFProcess - 副本12\LDFToPicture.cpp(468) : see declaration of 'i'
+执行 cl.exe 时出错.
+Creating temporary file "G:\aTemp\Temp\RSPC46A.tmp" with contents
+[
+/nologo /o"Debug/LDFProcess.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\AbnmdlDlg.sbr"
+".\Debug\CldetcDlg.sbr"
+".\Debug\Core.sbr"
+".\Debug\GDC.sbr"
+".\Debug\GeoLayer.sbr"
+".\Debug\GeoMath.sbr"
+".\Debug\Geometry.sbr"
+".\Debug\GeoTable.sbr"
+".\Debug\GMap.sbr"
+".\Debug\InputDlg.sbr"
+".\Debug\IProvider.sbr"
+".\Debug\Irmath.sbr"
+".\Debug\LDF.sbr"
+".\Debug\LDFProcess.sbr"
+".\Debug\LDFProcessDlg.sbr"
+".\Debug\OutputDlg.sbr"
+".\Debug\ShapeFile.sbr"
+".\Debug\ShapeProvider.sbr"
+".\Debug\Store.sbr"
+".\Debug\LDFToPicture.sbr"]
+Creating command line "bscmake.exe @G:\aTemp\Temp\RSPC46A.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+LDFProcess.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,420 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LDFProcess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LDFProcess.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LDFPROCESS_DIALOG DIALOGEX 0, 0, 604, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LDFProcess"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "云检测",IDC_BUT_CLOUDetection,100,20,81,46
+    PUSHBUTTON      "输出设置",IDC_BUT_Output,343,20,81,46
+    PUSHBUTTON      "输入设置",IDC_BUT_Input,19,20,81,46
+    PUSHBUTTON      "地图浏览",IDC_BUT_Browser,505,20,81,46
+    PUSHBUTTON      "异常模型",IDC_BUT_Abnormal,181,20,81,46
+    PUSHBUTTON      "计算输出",IDC_BUT_CAL,424,20,81,46
+    PUSHBUTTON      "图例设置",IDC_BUT_Legend,262,20,81,46
+END
+
+IDD_DIALOG_abnormalmodel DIALOG 0, 0, 160, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "异常模型"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,91,16,50,14
+    PUSHBUTTON      "取消",IDCANCEL,91,34,50,14
+    CONTROL         "K值模型",IDC_RADIO_KValue,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,16,46,14
+    CONTROL         "RST算法",IDC_RADIO_RST,"Button",BS_AUTORADIOBUTTON,20,34,46,14
+    CONTROL         "小波分析",IDC_RADIO_Wavelet,"Button",BS_AUTORADIOBUTTON,20,52,46,14
+END
+
+IDD_DIALOG_clouddetection DIALOG 0, 0, 222, 187
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "云检测"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,98,152,50,14
+    PUSHBUTTON      "取消",IDCANCEL,156,152,50,14
+    GROUPBOX        "云检测阈值",IDC_STATIC,18,14,189,125
+    RTEXT           "1月份:",IDC_STATIC,32,35,27,10
+    RTEXT           "2月份:",IDC_STATIC,32,51,27,10
+    RTEXT           "3月份:",IDC_STATIC,32,67,27,10
+    RTEXT           "4月份:",IDC_STATIC,32,83,27,10
+    RTEXT           "5月份:",IDC_STATIC,32,99,27,10
+    RTEXT           "6月份:",IDC_STATIC,32,115,27,10
+    EDITTEXT        IDC_EDIT_MONTH1,63,33,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH2,63,49,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH3,63,65,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH4,63,81,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH5,63,97,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH6,63,113,36,12,ES_AUTOHSCROLL
+    RTEXT           "7月份:",IDC_STATIC,119,35,27,10
+    RTEXT           "8月份:",IDC_STATIC,119,51,27,10
+    RTEXT           "9月份:",IDC_STATIC,119,67,27,10
+    RTEXT           "10月份:",IDC_STATIC,119,83,27,10
+    RTEXT           "11月份:",IDC_STATIC,119,99,27,10
+    RTEXT           "12月份:",IDC_STATIC,119,115,27,10
+    EDITTEXT        IDC_EDIT_MONTH7,150,33,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH8,150,49,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH9,150,65,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH10,150,81,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH11,150,97,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MONTH12,150,113,36,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_OUTPUT DIALOGEX 0, 0, 297, 291
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输出设置"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,175,237,50,14
+    PUSHBUTTON      "取消",IDCANCEL,230,237,50,14
+    LTEXT           "输出路径:",IDC_STATIC,19,17,36,10
+    EDITTEXT        IDC_EDIT_OUTPUT,57,15,176,12,ES_AUTOHSCROLL
+    CONTROL         "原图像伪彩色合成  ..\\color\\",IDC_CHEK_Pseudocolor,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,41,141,114,10
+    CONTROL         "K值伪彩色合成        ..\\Kcolor\\",IDC_CHEK_Kpseudocolor,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,41,157,114,10
+    CONTROL         "区域统计（多点）  ..\\statistics\\",IDC_CHEK_Statistics,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,41,173,118,10
+    GROUPBOX        "输出结果",IDC_STATIC,20,42,261,191
+    PUSHBUTTON      "浏览. .",IDC_BUT_OUTSEL,241,15,28,13
+    CONTROL         "背景场建立                    ..\\bkgnd\\",IDC_RADIO_background,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,26,58,126,13
+    CONTROL         "异常检测",IDC_RADIO_abnormaldetection,"Button",BS_AUTORADIOBUTTON,26,122,109,17
+    CONTROL         "2倍标准差云检测",IDC_CHEK_Clddetection2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,41,76,96,10
+    CONTROL         "均值与标准差同文件存储",IDC_RADIO_together,"Button",BS_AUTORADIOBUTTON | WS_GROUP,41,91,103,10
+    CONTROL         "均值与标准差分文件存储",IDC_RADIO_split,"Button",BS_AUTORADIOBUTTON,41,106,104,10
+    LTEXT           "背景场:",IDC_STATIC,41,207,27,10
+    EDITTEXT        IDC_EDIT_BKGND,71,205,171,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览. .",IDC_BUT_SELBKGND,250,204,28,13
+    CONTROL         "多期无云合成          ..\\compound\\",IDC_CHEK_Compound,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,41,189,122,10
+END
+
+IDD_DIALOG_INPUT DIALOGEX 0, 0, 412, 203
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入设置"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,171,166,50,14
+    PUSHBUTTON      "取消",IDCANCEL,229,166,50,14
+    LTEXT           "LDF数据：",IDC_STATIC,14,20,40,10
+    EDITTEXT        IDC_EDIT_INPUT,89,19,157,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览..",IDC_BUT_SEL,251,19,27,12
+    CONTROL         "文件夹",IDC_RADIO_Folder,"Button",BS_AUTORADIOBUTTON | WS_GROUP,51,18,35,12
+    CONTROL         "文件组",IDC_RADIO_Files,"Button",BS_AUTORADIOBUTTON,51,37,35,12
+    PUSHBUTTON      "Info>>",IDC_BUT_Extend,243,37,35,12
+    GROUPBOX        "地图信息",IDC_STATIC,296,15,99,148
+    RTEXT           "最小经度",IDC_STATIC,299,32,41,11
+    RTEXT           "最大经度",IDC_STATIC,299,53,41,11
+    RTEXT           "经向分辨率",IDC_STATIC,299,74,41,11
+    RTEXT           "最大纬度",IDC_STATIC,299,117,41,11
+    RTEXT           "最小纬度",IDC_STATIC,299,95,41,12
+    RTEXT           "纬向分辨率",IDC_STATIC,299,138,41,10
+    EDITTEXT        IDC_EDIT_LEFT,343,31,34,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RIGHT,343,52,34,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LONRES,343,73,34,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOTTOM,343,94,34,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOP,343,115,34,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LATRES,343,136,34,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "添加..",IDC_BUT_Add,139,37,27,12
+    CONTROL         "",IDC_SEPARATOR,"Static",SS_BLACKFRAME | SS_SUNKEN,287,18,1,162
+    LISTBOX         IDC_LIST_FILE,32,56,246,103,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删除",IDC_BUT_Del,174,37,27,12
+    PUSHBUTTON      "清空",IDC_BUT_Clear,209,37,27,12
+    LTEXT           "",IDC_STATIC_COUNT,87,39,46,10
+END
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 LDFProcess"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "LDFProcess 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_CALCULATE DIALOGEX 0, 0, 312, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,197,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,251,107,50,14
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,34,48,210,17
+    LTEXT           "处理文件：",IDC_STATIC,27,20,44,10
+    LTEXT           "Static",IDC_STATIC_INPUT,70,20,207,10
+    LTEXT           "用时：",IDC_STATIC,46,86,29,10
+    LTEXT           "Static",IDC_STATIC_TIME,79,86,40,14
+    LTEXT           "Static",IDC_STATIC_PERCENT,251,49,42,18
+END
+
+IDD_DIALOG_LEGEND DIALOGEX 0, 0, 604, 423
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图例设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "圆形",IDC_RADIO_circle,"Button",BS_AUTORADIOBUTTON | WS_GROUP,26,352,27,13
+    CONTROL         "矩形",IDC_RADIO_rectangle,"Button",BS_AUTORADIOBUTTON,26,371,27,13
+    CONTROL         "断裂",IDC_RADIO_fault,"Button",BS_AUTORADIOBUTTON,26,391,27,13
+    DEFPUSHBUTTON   "确定",IDOK,483,389,50,14
+    PUSHBUTTON      "取消",IDCANCEL,538,389,50,14
+    EDITTEXT        IDC_EDIT_MINVALUE,61,17,48,15,ES_AUTOHSCROLL
+    LTEXT           "影像最小值",IDC_STATIC,12,18,46,15
+    EDITTEXT        IDC_EDIT_MAXVALUE,61,37,48,15,ES_AUTOHSCROLL
+    LTEXT           "影像最大值",IDC_STATIC,12,38,41,15
+    EDITTEXT        IDC_EDIT_KMINVALUE,61,58,48,15,ES_AUTOHSCROLL
+    LTEXT           "K值最小值",IDC_STATIC,14,59,40,15
+    EDITTEXT        IDC_EDIT_KMAXVALUE,61,79,48,15,ES_AUTOHSCROLL
+    LTEXT           "K值最大值",IDC_STATIC,14,80,38,15
+    LISTBOX         IDC_LIST_FILE_LEGEND,15,180,122,136,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PIC_SHOW,"Static",SS_BLACKFRAME | SS_RIGHTJUST | SS_REALSIZEIMAGE,153,40,430,283
+    CONTROL         "",IDC_PIC_LEGEND,"Static",SS_BLACKFRAME,154,14,331,19
+    DEFPUSHBUTTON   "应用",ID_APPLY_LEGEND,428,389,50,14
+    EDITTEXT        IDC_EDIT_FONTSIZE_LON_LAT,61,99,48,15,ES_AUTOHSCROLL
+    LTEXT           "经纬度字号",IDC_STATIC,14,100,42,15
+    CONTROL         "叠加震中",IDC_CHECK_epicenter,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,122,43,16
+    CONTROL         "叠加省界",IDC_CHECK_provin_border,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,140,43,16
+    CONTROL         "叠加断层",IDC_CHECK_fault,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,158,43,16
+    COMBOBOX        IDC_COMBO_SelChannel,518,16,65,15,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "放大",ID_Btn_ZOOMIN,483,349,50,14
+    DEFPUSHBUTTON   "缩小",ID_Btn_ZOOMOUT,538,349,50,14
+    DEFPUSHBUTTON   "保存",ID_Btn_SAVE,428,349,50,14
+    PUSHBUTTON      "ClrBtn",IDC_ClrBtn_epicenter,65,122,35,14
+    PUSHBUTTON      "ClrBtn",IDC_ClrBtn_provinborder,65,140,35,14
+    PUSHBUTTON      "ClrBtn",IDC_ClrBtn_fault,65,158,35,14
+    CONTROL         "",IDC_LIST_StatisticArea,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,218,362,181,50
+    EDITTEXT        IDC_EDIT_AddStatisticArea,266,344,133,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZE_provinborder,105,140,27,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZE_epicenter,105,122,27,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZE_fault,105,158,27,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "ClrBtn",IDC_ClrBtn_StatisticArea,120,352,35,14
+    CONTROL         "",IDC_SLIDER_Trans_StatisticArea,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOOLTIPS | WS_TABSTOP,114,379,87,23,WS_EX_DLGMODALFRAME
+    LTEXT           "Static",IDC_STATIC_StatisticArea_ColorTrans,63,384,45,15
+    LTEXT           "蒙板颜色",IDC_STATIC_StatisticArea_ColorTrans2,63,354,45,15
+    GROUPBOX        "统计",IDC_STATIC,15,333,395,82
+    LTEXT           "增加区域",IDC_STATIC_StatisticArea_ColorTrans3,221,346,34,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "LDFProcess Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "LDFProcess"
+            VALUE "LegalCopyright", "版权所有 (C) 2014"
+            VALUE "OriginalFilename", "LDFProcess.EXE"
+            VALUE "ProductName", "LDFProcess 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LDFPROCESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 597
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_DIALOG_abnormalmodel, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_DIALOG_clouddetection, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_DIALOG_OUTPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+
+    IDD_DIALOG_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_CALCULATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_DIALOG_LEGEND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 597
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 416
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 LDFProcess(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\LDFProcess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
